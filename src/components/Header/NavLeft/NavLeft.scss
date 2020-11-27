@@ -1,0 +1,56 @@
+.navbar__navbar-left {
+  .navbar-toggler {
+    width: 35px;
+    height: 40px;
+  }
+
+  .toggler-icon {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 20px;
+    height: 1px;
+    transition: .3s;
+    background-color: transparent;
+
+    &::before, &::after {
+      position: absolute;
+      left: 0;
+      width: 20px;
+      height: 1px;
+      content: '';
+      transition: .3s;
+      background-color: var(--third);
+    }
+
+    &::before {
+      top: 0;
+      transition-property: transform, top;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: 0;
+      transition-property: transform, bottom;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .navbar-toggler.collapsed .toggler-icon {
+    background-color: var(--third);
+
+    &::before, &::after {
+      transform: rotate(0);
+    }
+
+    &::before {
+      top: -7px;
+      transition-property: top, transform;
+    }
+
+    &::after {
+      bottom: -7px;
+      transition-property: bottom, transform;
+    }
+  }
+}

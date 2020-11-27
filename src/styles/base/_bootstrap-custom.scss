@@ -1,0 +1,181 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: var(--third);
+  background-color: var(--primary);
+}
+
+a {
+  transition: .3s;
+  color: var(--third);
+
+  &:hover {
+    text-decoration: none;
+    color: var(--fourth);
+  }
+}
+
+.nav-link.active {
+  font-weight: 400;
+}
+
+.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn,
+.dropdown-menu,
+.modal-content,
+.form-control {
+  border-radius: 0;
+}
+
+.btn,
+.btn-light,
+.form-control {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-light:focus {
+  box-shadow: none;
+}
+
+.form-control {
+  font-weight: 300;
+  color: var(--third);
+  border-color: var(--fifth);
+  background-color: var(--primary);
+
+  &:focus {
+    color: var(--third);
+    border-color: var(--third);
+    background-color: var(--primary);
+  }
+}
+
+.btn {
+  transition: .3s;
+  &:hover {
+  }
+}
+
+.btn {
+  font-weight: 100;
+  color: var(--third);
+  border-radius: 0;
+
+  &:hover {
+    color: var(--fourth);
+  }
+}
+
+.dropdown-menu {
+  margin-top: 0;
+  color: var(--third);
+  border-color: var(--fifth);
+  background-color: var(--primary);
+}
+
+.dropdown-item {
+  font-weight: 100;
+  color: var(--third);
+
+  &:focus, &:hover {
+    color: var(--fourth);
+    background-color: transparent;
+  }
+}
+
+.modal-content {
+  background-color: var(--primary);
+  border: 0;
+  border-radius: 0;
+}
+
+.badge {
+  color: var(--primary);
+  background-color: var(--third);
+}
+
+.list-group-item {
+  background-color: transparent;
+}
+
+.card {
+  border: 0;
+  border-radius: 0;
+  background-color: var(--secondary);
+}
+
+.card-header {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  &:first-child {
+    border-radius: 0;
+  }
+}
+
+.card-body {
+  padding: .5rem;
+}
+
+.card-title {
+  margin-bottom: .25rem;
+}
+
+.custom-control-input {
+  &:checked ~ .custom-control-label::before {
+    color: var(--primary);
+    border-color: var(--fourth);
+    background-color: var(--primary);
+  }
+
+  &:not(:disabled):active ~ .custom-control-label::before {
+    color: var(--primary);
+    border-color: var(--fourth);
+    background-color: var(--primary);
+  }
+
+  &:focus ~ .custom-control-label::before {
+    box-shadow: none;
+  }
+
+  &:focus:not(:checked) ~ .custom-control-label::before {
+    border-color: var(--fourth);
+  }
+}
+
+.custom-switch {
+  .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: var(--third);
+  }
+
+  .custom-control-label::after {
+    background-color: var(--fourth);
+  }
+}
+
+.custom-control-label::before {
+  border-color: var(--fourth);
+  background-color: var(--primary);
+}
+
+.modal-header {
+  border-bottom-color: var(--fifth);
+}
+
+.close {
+  font-weight: 100;
+  color: var(--third);
+  text-shadow: none;
+  opacity: .5;
+
+  &:hover {
+    color: var(--third);
+  }
+}

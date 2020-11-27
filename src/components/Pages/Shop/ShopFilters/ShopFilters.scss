@@ -1,0 +1,23 @@
+.shop-filters {
+  .arrow-down {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: -.65rem;
+      width: 4px;
+      height: 4px;
+      content: '';
+      transition: all 0.2s;
+      transform: rotate(135deg);
+      border-bottom: 1px solid var(--third);
+      border-left: 1px solid var(--third);
+    }
+  }
+
+  .arrow-down.collapsed::after {
+    margin-top: -2px;
+    transform: rotate(-45deg);
+  }
+}

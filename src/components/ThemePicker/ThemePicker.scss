@@ -1,0 +1,16 @@
+.theme-picker {
+  right: .5rem;
+  bottom: .5rem;
+}
+
+.theme-picker__popup {
+  bottom: 3.5rem;
+  right: .5rem;
+  z-index: 2;
+
+  .card-body {
+    padding: 1rem;
+    background-color: var(--primary);
+    border: 1px solid var(--fifth);
+  }
+}

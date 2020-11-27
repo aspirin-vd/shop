@@ -1,0 +1,20 @@
+.home {
+  .home__link_image {
+    padding-top: 100%;
+    background: var(--secondary);
+  }
+
+  .home__image {
+    top: 0;
+    left: 0;
+  }
+
+  .home__caption {
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+    background-color: var(--secondary);
+  }
+}

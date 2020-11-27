@@ -1,0 +1,17 @@
+.navbar__nav-right {
+  .user-menu {
+    right: -89%;
+    left: auto;
+  }
+
+  .cart-quantity {
+    font-size: .5rem;
+    font-weight: 900;
+    line-height: .3rem;
+    position: absolute;
+    top: 0;
+    left: 44%;
+    padding: .375rem;
+    border-radius: .5rem;
+  }
+}

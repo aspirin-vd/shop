@@ -1,0 +1,46 @@
+.header {
+  .navbar {
+    background-color: var(--primary);
+    height: 40px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: .5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    .navbar-expand-md .navbar-nav .nav-link {
+      padding: .5rem .75rem;
+    }
+  }
+}
+
+.header {
+  .arrow-down {
+    position: relative;
+
+    & > .nav-link::after {
+      position: absolute;
+      top: 1.25rem;
+      right: 2px;
+      width: 4px;
+      height: 4px;
+      margin-top: -2px;
+      content: '';
+      transition: .2s;
+      transform: rotate(-45deg);
+      border-bottom: 1px solid var(--third);
+      border-left: 1px solid var(--third);
+    }
+  }
+
+  .arrow-down.show > .nav-link::after {
+    margin-top: 0;
+    transform: rotate(135deg);
+  }
+}
+
+
+

@@ -1,0 +1,15 @@
+.home__menu {
+  a:after {
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    content: '';
+    transform: rotate(-45deg);
+    border-right: 1px solid var(--third);
+    border-bottom: 1px solid var(--third);
+  }
+}
